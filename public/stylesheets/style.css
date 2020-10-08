@@ -1,0 +1,488 @@
+body {
+    background-color: #eee !important;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+nav {
+    margin: 0 0 0 0;
+}
+
+.navbar {
+    margin: 0 0 0 0;
+}
+
+#logoImage {
+    height: 60px;
+    width: 100%;
+    display: block;
+
+}
+
+#lgLogoImage {
+    display: none;
+}
+
+#filterFormContainer {
+    margin-top: -20px;
+}
+
+a {
+    color: #000 !important;
+}
+
+.shadow {
+    -moz-box-shadow: 4px 4px 5px 6px #ccc;
+    -webkit-box-shadow: 4px 4px 5px 6px #ccc;
+    box-shadow: 4px 4px 5px 6px #ccc;
+}
+
+span {
+
+}
+
+.navlist:hover {
+
+    background-color: #e5e5e5;
+}
+
+#detailButton {
+    margin: 1px;
+    border-radius: 0.5em;
+    font-size: 18px;
+    margin-left: -20px;
+}
+
+#detailButtonText {
+}
+
+.thedot {
+    font-size: 1px;
+    height: 100px;
+}
+
+p {
+    font-size: 20px !important;
+    line-height: 30px !important;
+}
+
+.mainform {
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    margin: 15px;
+    padding-top: 15px !important;
+    border-radius: 0.5em;
+    min-height: 180px;
+}
+
+.filterform {
+    margin: 5px 0px 0px 0px;
+    color: #000;
+}
+
+.bothSelect {
+
+    height: 40px !important;
+    line-height: 50px !important;
+    margin: 0px 0 0px 0 !important;
+    font-size: 20px !important;
+    text-align: center !important;
+}
+
+.selectandlabel {
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
+
+}
+
+/**userPostPage**/
+.userPostLabels {
+    margin: 0px 0 0 0;
+    font-size: 15px;
+}
+
+.userPostInputs {
+    margin: 0px 0 0px 0;
+}
+
+.userPostForm {
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    margin: 15px;
+    padding-top: 10px !important;
+    padding-bottom: 1px !important;
+    border-radius: 0.5em;
+    min-height: 180px !important;
+}
+
+input[type=radio] {
+    width: 1em;
+    height: 1em;
+}
+
+#fillDetailsTitle {
+    font-size: 15px !important;
+}
+
+.myCarouselImage {
+    height: 20%;
+    width: 50%
+}
+
+#homeImag {
+    height: 163px;
+    width: 270px;
+}
+
+.myinput {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+}
+
+input {
+
+}
+
+.searchButton {
+    font-size: 20px !important;
+    line-height: 30px !important;
+    margin: 10px 0 10px -10px !important;
+    border-radius: 0.3em !important;
+}
+
+.submitUserPost {
+    font-size: 20px !important;
+    line-height: 30px !important;
+    margin: 10px 15px 0px 0px !important;
+    border-radius: 0.3em !important;
+}
+
+.detailsTitle {
+    margin: 10px 0 10px 0;
+    font-size: 20px !important;
+    line-height: 40px !important;
+    height: 40px;
+
+}
+
+.dt {
+    color: #999999;
+    float: left;
+    margin-left: 0;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    height: 30px;
+    font-weight: lighter;
+
+}
+
+.dd {
+    margin-left: 50% !important;
+    font-size: 15px !important;
+    line-height: 30px !important;
+    height: 30px !important;
+
+
+}
+
+#detailImage {
+
+
+}
+
+
+.gallery {
+    display: flex !important;
+    background-color: #f9f2f2;
+    padding: 5px 10px 5px 20px;
+    margin: 0px 20px 0px 0px;
+    border-radius: 1em;
+    list-style-type: none;
+    grid-template-rows: repeat(1, 5vw) !important;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+}
+
+.gallery__img {
+    width: 60px;
+    height: 50px;
+    margin: 0px 10px 0px 0px;
+
+}
+
+.gallery__img:hover {
+    background-color: #00B7FF;
+}
+
+.detailImageHolder {
+    background-color: #e5e5e5;
+    justify-content: center;
+    display: flex;
+
+}
+
+#imgToChage {
+    margin: 0px 0px 10px 0px !important;
+    max-width: 100%;
+
+    height: 220px;
+}
+
+/*user Upload Page*/
+#imageUploadForm {
+    background-color: #fff;
+}
+
+@media (min-width: 1280px) {
+    body {
+        background-color: #e5e5e5 !important;
+        color: #000;
+        padding: 20px;
+        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    }
+
+    nav {
+        margin: 0 0 0 0;
+    }
+
+    .navbar {
+
+        margin: 0 0 0 0;
+    }
+
+    #logoImage {
+        height: 50px;
+        width: 30%;
+        display: none;
+    }
+
+    #lgLogoImage {
+        display: block;
+    }
+
+    #filterFormContainer {
+        margin-top: 0px;
+    }
+
+    p {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    span {
+
+    }
+
+    .navlist:hover {
+
+        background-color: #e5e5e5;
+    }
+
+    #detailButton {
+        height: 40px !important;
+        line-height: 30px !important;
+        margin: 2px;
+        border-radius: 0.5em;
+    }
+
+    #detailButtonText {
+        font-size: 18px !important;
+        line-height: 20px !important;
+    }
+
+    .mainform {
+        background-color: #fff;
+        color: #000;
+        font-size: 20px;
+        margin: 15px;
+        padding-top: 20px !important;
+        border-radius: 0.5em;
+        min-height: 180px;
+    }
+
+    .filterform {
+        margin: 10px 0px 30px 0px;
+        color: #000;
+    }
+
+    #homeImag {
+        /*max-height: 300px!important;
+        max-height: 300px!important;*/
+        height: 163px;
+        width: 260px;
+    }
+
+    .gallery {
+        list-style-type: none;
+        background-color: #f9f2f2;
+        /*padding: 5px 10px 5px 20px;
+        margin: 0px 50px 0px 100px;
+        border-radius: 1em;*/
+
+        display: grid !important;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(1, 5vw);
+        grid-gap: 15px;
+
+    }
+
+    .gallery__img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .gallery__img:hover {
+        background-color: #00B7FF;
+
+    }
+
+    .detailImageHolder {
+        background-color: #e5e5e5;
+        justify-content: center;
+        display: flex;
+
+    }
+
+    #imgToChage {
+        margin: 10px 100px 30px 100px;
+        max-width: 100%;
+        height: 500px;
+    }
+
+    .bothSelect {
+        height: 40px !important;
+        line-height: 30px !important;
+        margin: 0px 0 0px 0 !important;
+        font-size: 20px !important;
+        text-align: center !important;
+        border-radius: 0px !important;
+    }
+
+    .selectandlabel {
+        margin: 0px 1px 0px 10px !important;
+        padding: 0 10px 0 10px !important;
+
+    }
+
+    .searchButton {
+        font-size: 20px !important;
+        line-height: 30px !important;
+        margin: 0px 0 0 10px !important;
+        border-radius: 1em;
+
+    }
+
+    .submitUserPost {
+        font-size: 20px !important;
+        line-height: 30px !important;
+        margin: 10px 180px 0 0px !important;
+        border-radius: 1em;
+
+    }
+
+    .thedot {
+        font-size: 20px !important;
+        height: 35px;
+
+    }
+
+    .detailsTitle {
+        margin: 20px 0 30px 0;
+        font-size: 20px !important;
+        line-height: 20px !important;
+        height: 20px;
+
+
+    }
+
+    .dt {
+        float: left;
+        margin-left: 0;
+        font-size: 20px !important;
+        line-height: 30px !important;
+        height: 30px;
+        font-weight: lighter;
+    }
+
+    .dd {
+        margin-left: 20% !important;
+        font-size: 20px !important;
+        line-height: 30px !important;
+        height: 40px !important;
+
+
+    }
+
+    /**userPostPage**/
+    .userPostLabels {
+        margin: 15px 0 20px 0;
+        font-size: 25px;
+    }
+
+    .userPostInputs {
+
+        margin: 15px 0 20px 0;
+    }
+
+    .userPostForm {
+        background-color: #fff;
+        color: #000;
+        font-size: 20px;
+        margin: 15px;
+        margin-right: 100px;
+        padding-top: 20px !important;
+        border-radius: 0.5em;
+        min-height: 180px;
+    }
+
+    #fillDetailsTitle {
+        font-size: 30px !important;
+
+    }
+
+    .myCarouselImage {
+        width: 40%
+    }
+
+    .myinput {
+        height: 40px;
+        width: 83%;
+        border: 1px solid #c0c0c0;
+        border-radius: 5px;
+    }
+
+    /*detail page of user content*/
+    #detailImage {
+        margin: 10px 0px 0px 0px;
+        width: 50% !important;
+    }
+
+    #imageUploadForm {
+        background-color: #fff;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    /*safari and chrome*/
+    select {
+        height: 30px;
+        line-height: 30px;
+        background: #f4f4f4;
+    }
+}
+
+
+@media screen\0 {
+    /* IE Hacks: targets IE 8, 9 and 10 */
+    select {
+        height: 30px;
+        line-height: 30px;
+    }
+}

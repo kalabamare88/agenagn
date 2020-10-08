@@ -1,0 +1,143 @@
+body {
+    padding: 20px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    /*safari and chrome*/
+    select {
+        height: 30px;
+        line-height: 30px;
+        background: #f4f4f4;
+    }
+}
+
+
+@media screen\0 {
+    /* IE Hacks: targets IE 8, 9 and 10 */
+    select {
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+.shadow {
+    -moz-box-shadow: 4px 4px 5px 6px #ccc;
+    -webkit-box-shadow: 4px 4px 5px 6px #ccc;
+    box-shadow: 4px 4px 5px 6px #ccc;
+}
+
+span {
+    font-size: 50px !important;
+}
+
+.thedot {
+    font-size: 1px;
+    height: 100px;
+}
+
+p {
+    font-size: 50px !important;
+    line-height: 60px !important;
+}
+.bothSelect {
+    height: 70px !important;
+    line-height: 70px !important;
+    margin: 10px 0 10px 0!important;
+    font-size: 40px!important;
+    text-align: center!important;
+}
+
+.detailsTitle {
+    font-size: 150px !important;
+    line-height: 170px !important;
+    height: 70px;
+
+}
+
+.dt {
+    float: left;
+    font-size: 50px !important;
+    line-height: 30px !important;
+
+}
+
+.dd {
+    margin:0;
+    margin-left: 15%!important;
+    font-size: 50px !important;
+    line-height: 70px !important;
+    height: 80px!important;
+    background-color: #000;
+
+}
+
+@media (min-width: 1280px) {
+    p {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    span {
+        font-size: 20px !important;
+    }
+
+    #detailButton {
+        height: 40px !important;
+        width: 80px !important;
+        line-height: 30px !important;
+    }
+
+    #detailButtonText {
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+
+    .bothSelect {
+        height: 50px !important;
+        line-height: 30px !important;
+        margin: 0px 0 0px 0!important;
+        font-size: 20px!important;
+        text-align: center!important;
+    }
+
+    .searchButton {
+        font-size: 16px !important;
+        line-height: 20px !important;
+        margin: 0px !important;
+    }
+
+    .thedot {
+        font-size: 20px !important;
+        height: 35px;
+
+    }
+
+    .detailsTitle {
+        font-size: 20px !important;
+        line-height: 20px !important;
+        height: 20px;
+
+
+    }
+
+    .dt {
+        float: left;
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+
+    .dd {
+        margin-left:25%!important;
+        font-size: 20px !important;
+        line-height: 30px !important;
+        height: 40px!important;
+        background-color: #ffc;
+
+
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/MDB-Pro_4.11.0/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="/MDB-Pro_4.11.0/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body class="">
+
+<div class="container-fluid">
+    <div class="flex-center" style="margin-top:40px">
+
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-4" >
+
+            <!--Card -->
+            <div class="card">
+
+                <!--Card content -->
+                <div class="card-body">
+
+                    <!-- Login form -->
+                    <form action="iamtheadmin" method="post">
+                        <p class="h5 text-center mb-4">Sign in</p>
+                        <p class="text-center mb-4" style="color:red;"><%= errlogin %></p>
+
+                        <div class="md-form">
+                            <i class="fas fa-user prefix grey-text"></i>
+
+                            <input type="text" id="defaultForm-name" class="form-control" name="username">
+                            <label for="defaultForm-name">Username</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-lock prefix grey-text"></i>
+                            <input type="password" id="defaultForm-pass" class="form-control" name="password">
+                            <label for="defaultForm-pass">Password</label>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button class="btn btn-default" type="submit">Login</button>
+                        </div>
+                    </form>
+                    <!-- Login form -->
+
+                </div>
+
+            </div>
+            <!--Card -->
+
+        </div>
+        <!-- Grid column -->
+    </div>
+
+
+</div>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/MDB-Pro_4.11.0/js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="/MDB-Pro_4.11.0/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/MDB-Pro_4.11.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="/MDB-Pro_4.11.0/js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript"></script>
+<script>
+
+
+    // Material Select Initialization
+    $(document).ready(function () {
+        $('.mdb-select').materialSelect();
+    });
+</script>
+</body>
+</html>

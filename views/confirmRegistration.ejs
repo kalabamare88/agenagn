@@ -1,0 +1,125 @@
+<!DOCTYPE  html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel='stylesheet' href='/bootstrap-3.3.7-dist/css/bootstrap.min.css'>
+
+</head>
+<style>
+    input[type="file"] {
+        display: block;
+    }
+
+    .imageThumb {
+        max-height: 75px;
+        border: 2px solid;
+        padding: 1px;
+        cursor: pointer;
+    }
+
+    .pip {
+        display: inline-block;
+        margin: 10px 10px 0 0;
+    }
+
+    .remove {
+        display: block;
+        background: #444;
+        border: 1px solid black;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .remove:hover {
+        background: white;
+        color: black;
+    }
+</style>
+<body style=" color:#000">
+<div>
+
+    <div class="">
+        <nav class="navbar navbar-default row" role="navigation">
+
+            <div >
+                <img src="/images/6.png" alt="">
+            </div>
+            <div class="navbar-header">
+                <button class="navbar-toggle " type="button" data-toggle="collapse" data-target="#navbar-collapse-main">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </button>
+
+            </div>
+            
+            <div class="collapse navbar-collapse " id="navbar-collapse-main">
+                <ul class="nav navbar-nav">
+                    <li class=" active"><a href="/">Home</a></li>
+                    <li class=""><a href="guestHouse"> Guest House</a></li>
+                    <li class=""><a href="userPost">Register</a></li>
+                    <li class=""><a href="">About us</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="field" align="left">
+            <h2 style="margin-left: 10%;">You Are Almost Done!</h2>
+
+            <form action="upload/<%= mydocsReg._id %>/<%= mydocsReg.place %>" method="post"
+                  enctype="multipart/form-data" id="imageUploadForm" style="min-height: 300px;">
+
+                <input type="file" value="upload" name="files[]" id="files" multiple class="btn btn-lg" style="margin: 20px">
+                <br>
+                <input style="display: none;" name="placeOf"></input>
+                <button type="submit" class="row btn " style="margin:0 0 30px 30px">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<!--<script src="./externalBootstrapFiles/jquery.min.js"></script>-->
+<script src="./externalBootstrapFiles/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        if (window.File && window.FileList && window.FileReader) {
+            $("#files").on("change", function (e) {
+                var files = e.target.files,
+                    filesLength = files.length;
+                for (var i = 0; i < filesLength; i++) {
+                    var f = files[i];
+                    var fileReader = new FileReader();
+                    fileReader.onload = (function (e) {
+                        var file = e.target;
+                        $("<span class=\"pip\">" +
+                            "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                            "<br/><span class=\"remove\">Remove image</span>" +
+                            "</span>").insertBefore("#files");
+                        $(".remove").click(function () {
+                            var filee = $(this).data("file");
+                            $(this).parent(".pip").remove();
+                            $(filee).val("");
+                        });
+
+
+                    });
+                    fileReader.readAsDataURL(f);
+                }
+            });
+        } else {
+            alert("Your browser doesn't support to File API")
+        }
+    });
+</script>
+
+<script src="./externalBootstrapFiles/bootstrap.min.js"></script>
+</body>
+</html>

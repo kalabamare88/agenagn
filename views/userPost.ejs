@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/MDB-Pro_4.11.0/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="/MDB-Pro_4.11.0/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark special-color" style="background-color: gray;">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#"></a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="/"><span style="color:white">Home</span>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guestHouse" style="color:black"><span
+                                    style="color:white">Guest House</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="userPost"><span style="color:white">Register</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span style="color:white">About us</span></a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+            <!-- Collapsible content -->
+
+        </nav>
+        <!--/.Navbar-->
+    </div>
+    <br><br>
+    <div class="container">
+        <!-- Section: Inputs -->
+        <form class="section card mb-5" action="confirmRegistration" method="post">
+
+            <div class="card-body">
+
+
+                <h5 class="pb-5">Select</h5>
+
+                <!-- Grid row -->
+                <div class="row mb-5">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+
+                        <select class="mdb-select md-form colorful-select dropdown-primary"
+                                name="locationOfCondeminium">
+                            <option value="Any" class="myoptions"><span>--Any--</span></option>
+                            <option value="Gotera Condominium" class="myoptions">Gotera Condominium</option>
+                            <option value="Ayat Condominium" class="myoptions">Ayat Condominium</option>
+                            <option value="Gelan Condominium" class="myoptions">Gelan Condominium</option>
+                            <option value="Summit Condominium" class="myoptions">Summit Condominium</option>
+                            <option value="Yeka Abado Condominium" class="myoptions">Yeka Abado Condominium</option>
+                        </select>
+                        <label class="mdb-main-label">Location of the Condeminium</label>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <select class="mdb-select md-form colorful-select dropdown-primary"
+                                name="numberOfBedRoomSelect">
+                            <option value="Any"><span>--Any--</span></option>
+                            <option value="0">Studio(no Bed Room)</option>
+                            <option value="1">1 Bed Room</option>
+                            <option value="2">2 Bed Rooms</option>
+                            <option value="3">3 Bed Rooms</option>
+                        </select>
+                        <label class="mdb-main-label">No of Bed Rooms</label>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <select class="mdb-select md-form colorful-select dropdown-primary" name="numberOfFloor">
+                            <option value="0">ground</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <label class="mdb-main-label">Floor</label>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <div class="row">
+
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+
+                        <div class="md-form">
+                            <input type="text" id="form1" class="form-control" name="monthlyRent">
+                            <label for="form1" class="">Monthly Rent</label>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <div class="md-form">
+                            <input type="text" id="form1" class="form-control" name="phoneNumberInput">
+                            <label for="form1" class="">Phone Number</label>
+                        </div>
+
+                    </div>
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                        <fieldset class="form-check">
+                            <label class="form-check-label" for="checkbox1"></label>
+                        </fieldset>
+
+                        <fieldset class="form-check mt-4">
+                            <input class="form-check-input filled-in" type="checkbox" id="checkbox2" name="guestHouse">
+                            <label class="form-check-label" for="checkbox2">Is it GuestHouse</label>
+                        </fieldset>
+
+                    </div>
+
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+
+                <h5 class="pb-5">File input</h5>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mb-4">
+
+                        <form>
+                            <div class="md-form">
+                                <div class="file-field">
+                                    <div class="btn btn-primary btn-sm float-left">
+                                        <span>Choose file</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Upload your file">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mb-4">
+
+                        <form action="#">
+                            <div class="md-form">
+                                <div class="file-field">
+                                    <div class="btn btn-primary btn-sm float-left">
+                                        <span>Choose files</span>
+                                        <input type="file" multiple>
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text"
+                                               placeholder="Upload one or more files">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+                <div class=" row  ">
+                    <div class="submitUserPost">
+                        <button style="float: right" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <!-- Section: Inputs -->
+    </div>
+
+
+</div>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/MDB-Pro_4.11.0/js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="/MDB-Pro_4.11.0/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/MDB-Pro_4.11.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="/MDB-Pro_4.11.0/js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript"></script>
+<script>
+
+
+    // Material Select Initialization
+    $(document).ready(function () {
+        $('.mdb-select').materialSelect();
+    });
+</script>
+</body>
+</html>

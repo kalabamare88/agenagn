@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel='stylesheet' href='/bootstrap-3.3.7-dist/css/bootstrap.min.css'>
+
+</head>
+<body style="color:#000">
+<div class="">
+    <div class="">
+        <nav class="navbar navbar-default" role="navigation">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle " type="button" data-toggle="collapse" data-target="#navbar-collapse-main">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse " id="navbar-collapse-main">
+                <ul class="nav navbar-nav">
+                    <li class=" active"><a href="/">Home</a></li>
+                    <li class=""><a href="../guestHouse"> Guest House</a></li>
+                    <li class=""><a href="../userPost">Register</a></li>
+                    <li class=""><a href="">About us</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <div class="container" style="color:#000; ">
+        <div class="detailImageHolder">
+            <img src='../images/<%= myDocsId.place %>/<%= myDocsId._id %>/<%= myfil[0] %>' alt="" class=""
+                 id="imgToChage">
+
+
+        </div>
+        <div class="galleryHolder">
+            <ul class=" gallery ">
+
+                <% for (var i = 0; i < myfil.length; i++) { %>
+
+                <li class="">
+                    <img src="../images/<%= myDocsId.place %>/<%= myDocsId._id %>/<%= myfil[i] %>" class="gallery__img"
+                         alt="Image 1"
+                         onclick="$('#imgToChage').attr('src','../images/<%= myDocsId.place %>/<%= myDocsId._id %>/<%= myfil[i] %>')">
+                </li>
+                <%}%>
+
+            </ul>
+        </div>
+
+
+        <div class="detailsTitle">Details</div>
+        <dl class="">
+            <dt class="dt"> Location</dt>
+            <dd class="dd"><%= myDocsId.place %> </dd>
+            <dt class="dt">Number of Bed Room</dt>
+            <dd class="dd"><%= myDocsId.numberOfBedRoom %> Bed Rooms</dd>
+            <dt class="dt">Monthly Rent</dt>
+            <dd class="dd"><%= myDocsId.monthlyrent %> Birr</dd>
+            <dt class="dt">Floor</dt>
+            <dd class="dd"><%= myDocsId.Flour %> Floor</dd>
+            <dt class="dt">Phone Number</dt>
+            <dd class="dd">+251 <%= myDocsId.myphonenumber %></dd>
+            <dt class="dt"></dt>
+            <dd class="dd"></dd>
+        </dl>
+
+    </div>
+</div>
+<script src="../externalBootstrapFiles/jquery.min.js"></script>
+<script src="../externalBootstrapFiles/bootstrap.min.js"></script>
+
+</body>
+</html>

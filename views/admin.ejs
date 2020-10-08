@@ -1,0 +1,56 @@
+<!DOCTYPE  html>
+<html>
+<head>
+    <title>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css'/>
+        <link rel="stylesheet" href="./externalBootstrapFiles/bootstrap.min.css">
+    </title>
+</head>
+<body>
+<div>
+    <div class="well " style="background-color: #1b6d85; border-radius: 1em">
+        <div class="">
+            <button class="btn">Home</button>
+            <button class="btn"><a href="#">Register</a></button>
+            <button class="btn">Contact</button>
+            <button class="btn">About us</button>
+
+        </div>
+    </div>
+        <div class="container  " style="">
+            <% for (var i = 0; i < mydocs.length; i++){ %>
+                <form action="/detailForAdmin/<%= mydocs[i]._id %>" method="get" class="col-lg-3 col-md-4 col-sm-12 shadow"
+                      style="background-color:#fff; color:#000;font-size: 20px; margin:15px; padding-top:20px; border-radius: 0.5em; min-height: 180px; ">
+                    <span class="hide" id="idSpan"> id :<%= mydocs[i]._id %></span>
+                    <div style="text-align: center" class="">
+<!--                        <img src="/images/1.jpg" alt="" height="60%" width="100%">-->
+                        <% if (myfil[i]!=undefined){%>
+                            <img src='/images/<%= mydocs[i].place %>/<%= mydocs[i].id %>/<%= myfil[i][0]%>' alt="" height="60%" width="100%">
+                        <%} else{%>
+                            <img src="/images/1.jpg" alt="" id="homeImag">
+
+                        <%}%>
+                    </div>
+                    <div class=" " style="font-family: 'Fira Code Retina'; height:60%; width: 100%">
+                        <p class="" style="font-size:19px;">Place : <%= mydocs[i].place %></p>
+                        <p>Bed Room : <%= mydocs[i].numberOfBedRoom %></p>
+                        <p>Monthly rent : <%= mydocs[i].monthlyrent %> Birr</p>
+                    </div>
+                    <!--border-color:#999999;-->
+                    <div class="" style="">
+                        <div class="col-sm-8 col-xs-9"></div>
+                        <button class="btn  col-sm-3 " id="detailButton" style="  margin: 2px;  border-radius: 0.5em;">
+                            <span id="detailButtonText">Detail</span>
+                        </button>
+
+                    </div>
+
+                </form>
+            <% } %>
+        </div>
+
+</div>
+</div>
+</body>
+</html>

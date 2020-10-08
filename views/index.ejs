@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel='stylesheet' href='/bootstrap-3.3.7-dist/css/bootstrap.min.css'>
+
+</head>
+<body style="color:#000">
+<div>
+</div>
+
+<div class="">
+    <div class="">
+
+        <nav class="navbar navbar-default " role="navigation" style="background:#fff;">
+            <div class="navbar-header row ">
+
+                <button class="navbar-toggle " type="button" data-toggle="collapse" data-target="#navbar-collapse-main" >
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" style="margin: 0px"></span>
+                </button>
+                <div class="col-xs-10" style="margin: 0px">
+                    <img src="/images/6.png" alt="" style="" id="logoImage">
+                </div>
+
+            </div>
+            <div class="collapse navbar-collapse col-md-6" id="navbar-collapse-main" >
+                <ul class="nav navbar-nav">
+                    <li class="navlist "><a href="/">Home</a></li>
+                    <li class="navlist"><a href="guestHouse"> Guest House</a></li>
+                    <li class="navlist"><a href="userPost">Register</a></li>
+                    <li class="navlist"><a href="">About us</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+    <!--#1b6d85, #3c3c3c-->
+    <div class="container" id="filterFormContainer">
+        <form action="/q" method="get" class="filterform">
+            <div style="">
+                <div class="selectandlabel col-md-3  col-xs-12 ">
+                    <div><h4>Condeminium</h4></div>
+                    <select name="place" id="" class="condominiumPlace shadow bothSelect col-xs-12">
+                        <option value="Any" class="myoptions"><span>--Any--</span></option>
+                        <option value="Gotera Condominium" class="myoptions">Gotera Condeominium</option>
+                        <option value="Ayat Condominium" class="myoptions">Ayat Condeominium</option>
+                        <option value="Gelan Condominium" class="myoptions">Gelan Condeominium</option>
+                        <option value="Summit Condominium" class="myoptions">Summit Condeominium</option>
+                        <option value="Yeka Abado Condominium" class="myoptions">Yeka Abado Condominium</option>
+                    </select>
+                </div>
+                <div class="selectandlabel col-md-3 col-xs-12">
+                    <div><h4>Bed Room</h4></div>
+                    <select name="bedroom" id="" class="select shadow  bothSelect col-xs-12">
+                        <option value="Any"><span>--Any--</span></option>
+                        <option value="1">1 Bed Room</option>
+                        <option value="2">2 Bed Rooms</option>
+                        <option value="3">3 Bed Rooms</option>
+                    </select>
+                </div>
+                <div class="" style="padding-left:10px">
+                    <div class="thedot" style="color:#fff">.</div>
+                    <button class="btn btn-default shadow searchButton">
+                        search
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container  " style="">
+        <% for (var i = 0; i < mydocs.length; i++){ %>
+            <form action="/detail/<%= mydocs[i]._id %>" method="get" class="col-lg-3 col-md-4 col-sm-12 shadow mainform"
+                  style="">
+                <span class="hide" id="idSpan"> id :<%= mydocs[i]._id %></span>
+                <div style="text-align: center" class="">
+                    <!--<img src="/images/1.jpg" alt="" height="60%" width="100%">-->
+
+                    <% if (myfil[i][0]!= undefined){%>
+                        <img src='/images/<%= mydocs[i].place %>/<%= mydocs[i].id %>/<%= myfil[i][0]%>' alt="" height="60%" width="100%" id="homeImag">
+                    <%}  else {%>
+                        <img src='/images/1.jpg' alt="" id="homeImag">
+
+                    <%}%>
+
+                </div>
+                <div class=" " style="font-family: 'Fira Code Retina'; height:60%; width: 100%">
+                    <p class="" style="font-size:19px;">Place : <%= mydocs[i].place %></p>
+                    <p>Bed Room : <%= mydocs[i].numberOfBedRoom %></p>
+                    <p>Monthly rent : <%= mydocs[i].monthlyrent %> Birr</p>
+                </div>
+                <!--border-color:#999999;-->
+                <div class="row" style="">
+                    <div class="col-sm-8 col-xs-9"></div>
+                    <button class="btn  col-sm-3 " id="detailButton" style="  ">
+                        <span id="detailButtonText">Detail</span>
+                    </button>
+
+                </div>
+
+            </form>
+        <% } %>
+    </div>
+
+</div>
+<script src="./externalBootstrapFiles/jquery.min.js"></script>
+<script src="./externalBootstrapFiles/bootstrap.min.js"></script>
+
+</body>
+</html>
